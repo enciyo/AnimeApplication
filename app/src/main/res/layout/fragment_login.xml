@@ -6,7 +6,7 @@
              android:id="@+id/frameLayout"
              android:gravity="bottom"
              android:background="@drawable/loginscreen"
-             tools:context=".LoginFragment">
+             tools:context=".Fragments.LoginFragment">
 
     <TextView
             android:id="@+id/txtFragmentLogin"

@@ -1,4 +1,4 @@
-package enciyo.animeapplication
+package enciyo.animeapplication.Fragments
 
 
 import android.content.Intent
@@ -18,6 +18,7 @@ import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
+import enciyo.animeapplication.R
 import kotlinx.android.synthetic.main.fragment_login.*
 
 class LoginFragment : Fragment() {
