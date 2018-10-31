@@ -12,7 +12,7 @@
             android:id="@+id/txtFragmentLogin"
             android:text="@string/Welcome"
             android:textAlignment="center"
-            android:textColor="@android:color/holo_orange_light"
+            android:textColor="@color/colorLightText"
             android:textSize="28sp"
             android:layout_margin="40dp"
             android:layout_width="match_parent"
@@ -24,9 +24,9 @@
             android:text="@string/googleBtn"
             android:layout_gravity="bottom"
             android:textAlignment="center"
-            android:background="@android:color/holo_orange_light"
+            android:background="@color/colorLightText"
             android:padding="15dp"
-            android:textStyle="bold"
+            android:textColor="@android:color/white"
 
     />
 
