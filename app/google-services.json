@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "835791147322",
+    "firebase_url": "https://animeapplication-77496.firebaseio.com",
+    "project_id": "animeapplication-77496",
+    "storage_bucket": "animeapplication-77496.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835791147322:android:b586bd1285a6b70c",
+        "android_client_info": {
+          "package_name": "enciyo.animeapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "835791147322-bsnctfip6cd2ttuuglnjkp77a4ijveot.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "enciyo.animeapplication",
+            "certificate_hash": "6066bc51ea2732a301ba5303c1e68848a6c9d79b"
+          }
+        },
+        {
+          "client_id": "835791147322-ko1attbet49p9s45kjmqlsrf1tn9lkbs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDC6zDAg9jQ_ZfmNsLfcUnLmSXwmZT0KPs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "835791147322-ko1attbet49p9s45kjmqlsrf1tn9lkbs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
