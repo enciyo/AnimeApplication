@@ -13,7 +13,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/viewPager"
-    />
+            android:layout_below="@+id/tabLayout"/>
+
 
     <android.support.design.widget.TabLayout
             android:id="@+id/tabLayout"
@@ -25,7 +26,6 @@
             app:tabSelectedTextColor="@android:color/white"
             app:tabMode="fixed"
             android:background="@color/colorTabBar"
-            android:layout_alignTop="@+id/viewPager"
     >
 
     </android.support.design.widget.TabLayout>

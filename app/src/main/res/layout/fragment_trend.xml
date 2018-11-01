@@ -7,11 +7,11 @@
                 android:gravity="center"
              tools:context=".Fragments.TrendFragment">
 
-    <TextView
-            android:gravity="center"
-            android:id="@+id/trendtext"
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/hello_blank_fragment"/>
+            android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
 
 </RelativeLayout>

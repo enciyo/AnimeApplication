@@ -3,15 +3,19 @@ package enciyo.animeapplication.Fragments
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.support.v7.widget.LinearLayoutManager
+import android.support.v7.widget.RecyclerView
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
 import enciyo.animeapplication.Pojo.TrendRepo
 import enciyo.animeapplication.R
 import enciyo.animeapplication.Retrofit.ApiClient
 import enciyo.animeapplication.ViewPager
 import enciyo.animeapplication.myInterface
+import enciyo.animeapplication.recyclerAdapter
 import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_trend.*
 import retrofit2.Call
@@ -50,16 +54,15 @@ class HomeFragment : Fragment() {
 
             override fun onResponse(call: Call<TrendRepo>, response: retrofit2.Response<TrendRepo>) {
                 Log.i("myResponse", response.body()!!.top!![0].malId.toString())
-                val result = response.body()!!.top!![0]
-                trendtext.text= result.title + "\n" + result.imageUrl + "\n" + result.rank.toString() +
-                        "\n" + result.url
+                val result = response.body()!!.top!!
+                val adapter = recyclerAdapter(context!!,result)
+                val layoutManager= LinearLayoutManager(context!!)
+                layoutManager.orientation=LinearLayout.VERTICAL
+                recyclerView.layoutManager=layoutManager
+                recyclerView.adapter = adapter
+
             }
         })
-
-
-
-
-
 
     }
 }

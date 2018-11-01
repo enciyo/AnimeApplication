@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_margin="12dp"
+        android:weightSum="6"
+        android:layout_height="120dp">
+
+    <ImageView
+            android:contentDescription="imageView"
+            android:id="@+id/imageView"
+            android:layout_width="48dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/loginscreen"
+            android:layout_weight="1"
+    />
+    <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:paddingLeft="15dp"
+            android:layout_height="match_parent">
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="20sp"
+                  android:text="Title"
+                  android:autoSizeTextType="uniform"
+                  android:textSize="18sp"
+                  android:textStyle="bold"
+                  android:id="@+id/tvTitle"
+        />
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Rank"
+                  android:id="@+id/tvRank"
+        />
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Start Date"
+                  android:id="@+id/tvStartDate"
+        />
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Score"
+                  android:id="@+id/tvScore"
+        />
+
+    </LinearLayout>
+
+</LinearLayout>
