@@ -1,4 +1,4 @@
-package enciyo.animeapplication
+package enciyo.animeapplication.Retrofit
 import enciyo.animeapplication.Pojo.TrendRepo
 import retrofit2.http.GET
 

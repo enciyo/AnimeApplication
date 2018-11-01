@@ -1,4 +1,4 @@
-package enciyo.animeapplication
+package enciyo.animeapplication.Adapters
 
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager

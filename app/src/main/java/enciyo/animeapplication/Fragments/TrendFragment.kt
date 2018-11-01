@@ -13,7 +13,7 @@ import enciyo.animeapplication.Adapters.trendAdapter
 import enciyo.animeapplication.Pojo.TrendRepo
 import enciyo.animeapplication.R
 import enciyo.animeapplication.Retrofit.ApiClient
-import enciyo.animeapplication.myInterface
+import enciyo.animeapplication.Retrofit.myInterface
 import kotlinx.android.synthetic.main.fragment_trend.*
 import retrofit2.Call
 import retrofit2.Callback
