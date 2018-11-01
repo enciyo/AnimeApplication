@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_margin="6dp"
+        android:fitsSystemWindows="true"
+        app:cardElevation="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:layout_margin="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="1.2dp"
+                android:background="@android:color/black"
+        />
+
+        <ImageView
+                android:layout_gravity="center"
+                android:layout_width="150dp"
+                android:scaleType="fitXY"
+                android:layout_height="160dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/loginscreen"
+                android:id="@+id/magazineImage"
+        />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Title"
+                  android:layout_gravity="center"
+                  android:textStyle="bold"
+                  android:textSize="18sp"
+                  android:id="@+id/magazineTitle"
+        />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Type-Members"
+                  android:layout_gravity="center"
+                  android:id="@+id/magazineType-Members"
+        />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Aring Start"
+                  android:layout_gravity="center"
+                  android:id="@+id/magazineAring"
+        />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Synopsis"
+                  android:layout_gravity="start"
+                  android:layout_margin="4dp"
+                  android:id="@+id/magazineSynopsis"
+        />
+        <TextView
+                 android:layout_margin="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="1.2dp"
+                android:background="@android:color/black"
+        />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -4,7 +4,6 @@ package enciyo.animeapplication.Fragments
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -15,13 +14,11 @@ import enciyo.animeapplication.R
 import enciyo.animeapplication.Retrofit.ApiClient
 import enciyo.animeapplication.ViewPager
 import enciyo.animeapplication.myInterface
-import enciyo.animeapplication.recyclerAdapter
+import enciyo.animeapplication.Adapters.trendAdapter
 import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_trend.*
 import retrofit2.Call
 import retrofit2.Callback
-import retrofit2.Response
-import java.io.IOException
 
 
 class HomeFragment : Fragment() {
@@ -41,28 +38,7 @@ class HomeFragment : Fragment() {
         mViewPager!!.addFragment(MagazineFragment(),"Magazine")
         viewPager.adapter = mViewPager
         tabLayout.setupWithViewPager(viewPager)
-        val retrofit = ApiClient.getClient()
-        val mInterface = retrofit.create(myInterface::class.java)
 
-        val call = mInterface.getTrend()
-
-        call.enqueue(object: Callback<TrendRepo>{
-
-            override fun onFailure(call: Call<TrendRepo>, t: Throwable) {
-                        print(t.message)
-            }
-
-            override fun onResponse(call: Call<TrendRepo>, response: retrofit2.Response<TrendRepo>) {
-                Log.i("myResponse", response.body()!!.top!![0].malId.toString())
-                val result = response.body()!!.top!!
-                val adapter = recyclerAdapter(context!!,result)
-                val layoutManager= LinearLayoutManager(context!!)
-                layoutManager.orientation=LinearLayout.VERTICAL
-                recyclerView.layoutManager=layoutManager
-                recyclerView.adapter = adapter
-
-            }
-        })
 
     }
 }

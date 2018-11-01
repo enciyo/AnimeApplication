@@ -1,17 +1,17 @@
-package enciyo.animeapplication
+package enciyo.animeapplication.Adapters
 
 import android.content.Context
 import android.support.v7.widget.RecyclerView
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.squareup.picasso.Picasso
 import enciyo.animeapplication.Pojo.TrendRepo
+import enciyo.animeapplication.R
 import kotlinx.android.synthetic.main.item_list.view.*
 
-class recyclerAdapter(val context: Context, val arrayList: List<TrendRepo.Top>) :
-    RecyclerView.Adapter<recyclerAdapter.MyViewHolder>() {
+class trendAdapter(val context: Context, val arrayList: List<TrendRepo.Top>) :
+    RecyclerView.Adapter<trendAdapter.MyViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val view = LayoutInflater.from(context).inflate(R.layout.item_list, parent, false)
         return MyViewHolder(view!!)
