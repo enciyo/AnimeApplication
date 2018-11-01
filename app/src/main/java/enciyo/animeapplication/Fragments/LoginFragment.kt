@@ -36,16 +36,17 @@ class LoginFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         auth = FirebaseAuth.getInstance()
 
-        btnFragmentLogin.setOnClickListener {
+       /* btnFragmentLogin.setOnClickListener {
             gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
                 .requestEmail()
                 .build()
 
             mGoogleSignInClient = GoogleSignIn.getClient(view.context, gso!!)
-            signIn()
+           signIn()
 
-        }
+        }*/
+        btnFragmentLogin.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.nav_sign))
 
 
     }
